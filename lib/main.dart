@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
           initialData: 'Bark 0 times',
           create: (context) {
             final int dogAge = context.read<Dog>().age;
+            // 6
             final babies = Babies(age: dogAge * 2);
             return babies.bark();
           },

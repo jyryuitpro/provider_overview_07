@@ -17,6 +17,7 @@ class Babies {
     }
   }
 
+  // Stream을 만드는 방법 async* | yield
   Stream<String> bark() async* {
     for (int i = 1; i < age; i++) {
       await Future.delayed(Duration(seconds: 2));
